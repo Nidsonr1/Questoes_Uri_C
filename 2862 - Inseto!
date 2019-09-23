@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main(){
+  int cont, c, nv;
+  scanf("%d", &c);
+  for(cont = 0; cont < c; cont++){
+    scanf("%d", &nv);
+    if(nv <= 8000){
+      printf("Inseto!\n");
+    }else {
+      printf("Mais de 8000!\n");
+    }
+  }
+return 0;
+}
