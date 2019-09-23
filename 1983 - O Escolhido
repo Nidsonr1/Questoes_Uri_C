@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+
+int main(){
+    int qt, mat, cont, mat_max = 0;
+    double nota, max = 0;
+    scanf("%d", &qt);
+    for(cont = 1; cont <= qt; cont++){
+        scanf("%d", &mat);
+        scanf("%lf", &nota);
+        if(nota > max){
+          max = nota;
+          mat_max = mat;
+        }
+    }
+        if(max < 8){
+    printf("Minimum note not reached\n");
+  }else{
+    printf("%d\n", mat_max);
+        }
+return 0;
+}
