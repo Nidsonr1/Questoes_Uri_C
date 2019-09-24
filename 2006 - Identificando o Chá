@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+  int t, resposta, acertos=0, cont;
+  scanf("%d", &t);
+  for(cont = 0; cont <= 4; cont++){
+      scanf("%d", &resposta);
+      if(resposta == t){
+        acertos++;
+      }
+  }
+  printf("%d\n", acertos);
+
+return 0;  
+}
