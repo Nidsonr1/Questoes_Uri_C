@@ -1,0 +1,29 @@
+#include <stdio.h>
+ 
+int main(){
+  int qt_produtos, cod, qt, cont;
+  float v1=0, v2=0, v3=0, v4=0, v5=0, vt=0;
+  scanf("%d", &qt_produtos);
+  for(cont = 0; cont < qt_produtos; cont++){
+    scanf("%d", &cod);
+    if(cod == 1001){
+      scanf("%d", &qt);
+      v1 = 1.5 * (float)qt;
+    }if(cod == 1002){
+      scanf("%d", &qt);
+      v2 = 2.5 * (float)qt;
+    }if(cod == 1003){
+      scanf("%d", &qt);
+      v3 = 3.5 * (float)qt;
+    }if(cod == 1004){
+      scanf("%d", &qt);
+      v4 = 4.5 * (float)qt;
+    }if(cod == 1005){
+      scanf("%d", &qt);
+      v5 = 5.5 * (float)qt;
+    }
+  }
+  vt = v1 + v2 + v3 + v4 + v5;
+  printf("%.2f\n", vt);
+return 0;  
+}
