@@ -1,0 +1,35 @@
+#include <stdio.h>
+ 
+int main(){
+  int c, cont, x, y, res;
+  scanf("%d", &c);
+  for(cont = 1; cont <= c;cont++){
+    scanf("%d%d", &x, &y);
+    res = x + y;
+    if(res == 0){
+      printf("PROXYCITY\n");
+    }else if(res == 1){
+      printf("P.Y.N.G.\n");
+    }else if(res == 2){
+      printf("DNSUEY!\n");
+    }else if(res == 3){
+      printf("SERVERS\n");
+    }else if(res == 4){
+      printf("HOST!\n");
+    }else if(res == 5){
+      printf("CRIPTONIZE\n");
+    }else if(res == 6){
+      printf("OFFLINE DAY\n");
+    }else if(res == 7){
+      printf("SALT\n");
+    }else if(res == 8){
+      printf("ANSWER!\n");
+    }else if(res == 9){
+      printf("RAR?\n");
+    }else if(res == 10){
+      printf("WIFI ANTENNAS\n");
+    }
+
+  }
+return 0; 
+}
