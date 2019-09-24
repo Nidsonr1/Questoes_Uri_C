@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+  unsigned long long int x = 1, m;
+  int y = 1;
+while(x != 0 && y != 0){
+  scanf("%d %llu", &y, &x);
+
+  m = y * x;
+  
+  if(x == 0 && y == 0){
+    break;
+  }
+  printf("%llu\n", m);
+}
+
+return 0;  
+}
