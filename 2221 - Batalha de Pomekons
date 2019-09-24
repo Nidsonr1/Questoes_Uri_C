@@ -1,0 +1,31 @@
+#include <stdio.h>
+ 
+int main(){
+  int cont, T, B, atqd, defd, lvd, bonus;
+  int atqg, defg, lvg;
+  double ValorGolpeD, ValorGolpeG;
+  scanf("%d", &T);
+  for(cont=0; cont < T; cont++){
+    scanf("%d", &bonus);
+    scanf("%d %d %d", &atqd, &defd, &lvd);
+    scanf("%d %d %d", &atqg, &defg, &lvg);
+    if(lvd % 2 == 0){
+      ValorGolpeD = ((atqd + defd / 2) + bonus);
+      if(lvg % 2 == 0){
+      ValorGolpeG = ((atqg + defg / 2) + bonus);
+    }
+    }else{
+      ValorGolpeD = (atqd + defd) / 2;
+      ValorGolpeG = (atqg + defg) / 2;
+    }
+  if(ValorGolpeD > ValorGolpeG){
+     printf("Dabriel\n"); 
+    }if(ValorGolpeD < ValorGolpeG){
+       printf("Guarte\n"); 
+    }if(ValorGolpeD == ValorGolpeG){
+      printf("Empate\n");
+    }
+  }
+
+return 0;
+}
