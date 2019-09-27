@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main(){
+  int x, y, cont, imp = 0;
+  scanf("%d%d", &x, &y);
+  if(x < y){
+    for(cont = x; cont <= y; cont++){
+        if(cont % 2 != 0 && cont != x && cont!= y){
+          imp+=cont;
+        }
+    }
+  }else if(x > y){
+    for(cont = y; cont <=x; cont++){
+      if(cont % 2 != 0 && cont != x && cont!= y){
+          imp+=cont;
+        }
+    }
+  }
+  printf("%d\n", imp);
+
+return 0;
+}
