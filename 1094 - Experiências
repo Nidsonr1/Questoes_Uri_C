@@ -1,0 +1,36 @@
+#include <stdio.h>
+ 
+int main(){
+     int cont, coelhos = 0, sapos = 0, ratos = 0, total = 0, quantia, casos;
+     float p_coelho, p_sapo, p_rato;
+     char x;
+     scanf("%d", &casos);
+     for(cont = 0; cont < casos; cont++){
+     scanf("%d", &quantia);
+     total+=quantia;
+     scanf(" %c", &x);
+     if(x == 'C' || x == 'c'){
+       coelhos+=quantia;
+     }
+     if(x == 'R' || x == 'r'){
+        ratos+=quantia;
+     }
+     if(x == 'S' || x == 's'){
+        sapos+=quantia;
+     }
+
+    }
+    p_coelho = (float)(coelhos * 100) / (float)total;
+    p_rato = (float)(ratos * 100) / (float)total;
+    p_sapo = (float)(sapos * 100)/ (float)total;
+
+    printf("Total: %d cobaias\n", total);
+    printf("Total de coelhos: %d\n", coelhos);
+    printf("Total de ratos: %d\n", ratos);
+    printf("Total de sapos: %d\n", sapos);
+    printf("Percentual de coelhos: %.2f %%\n", p_coelho);
+    printf("Percentual de ratos: %.2f %%\n", p_rato);
+    printf("Percentual de sapos: %.2f %%\n", p_sapo);
+
+return 0;
+}
