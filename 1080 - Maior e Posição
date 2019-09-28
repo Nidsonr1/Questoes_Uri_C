@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    int maior = 0, pos, cont, vetor[1000], val;
+    for(cont = 1; cont <= 100; cont++){
+        scanf("%d", &val);
+        vetor[cont] = val;
+        
+        if(maior < val){
+            maior = val;
+            pos = cont;
+        }
+    }
+    printf("%d\n", maior);
+    printf("%d\n", pos);
+    
+return 0;   
+}
