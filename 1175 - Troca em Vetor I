@@ -1,0 +1,18 @@
+#include <stdio.h>
+ 
+int main(){
+    int vetor[20], cont, n, x;
+    for(cont = 0; cont < 20; cont++){
+        scanf("%d", &vetor[cont]);
+    }
+    for(cont = 0; cont < 10; cont++){
+        x = vetor[cont];
+        vetor[cont] = vetor[19 - cont];
+        vetor[19 - cont] = x;
+    }
+    for(cont = 0; cont < 20; cont++){
+        printf("N[%d] = %d\n", cont, vetor[cont]);
+    }
+
+return 0;
+}
