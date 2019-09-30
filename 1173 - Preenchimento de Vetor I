@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int n, i, N[10];
+    scanf("%d", &n);
+    for(i = 0; i < 10; i++){
+        if (i == 0){
+            N[i] = n;
+        }else{
+            N[i] = n * 2;
+            n*=2;
+        }
+     printf("N[%d] = %d\n", i, N[i]);
+    }
+return 0;
+}
