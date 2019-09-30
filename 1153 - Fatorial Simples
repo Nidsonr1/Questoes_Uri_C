@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(){
+    int n, cont, fat = 1;
+    scanf("%d", &n);
+    for(cont = n; cont > 0; cont--){
+        fat*=cont;
+    }printf("%d\n", fat);
+    return 0;
+}
