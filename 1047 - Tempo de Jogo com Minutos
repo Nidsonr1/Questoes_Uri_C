@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main(){
+        int hr_inicial,min_inicial, hr_final, min_final, tempo_inicial,tempo_final, dur, h, m;
+        scanf("%d %d %d %d",&hr_inicial,&min_inicial,&hr_final,&min_final);
+        tempo_inicial=(hr_inicial*60) + min_inicial;
+        tempo_final=(hr_final*60) + min_final;
+        if(tempo_inicial>tempo_final|| tempo_inicial==tempo_final){
+                tempo_final+=1440;}
+        dur = tempo_final - tempo_inicial;
+        h = dur / 60;
+        m = dur % 60;
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", h, m);
+return 0;
+system("pause");
+}
