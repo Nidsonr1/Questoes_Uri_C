@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main(){
+    float vetor[100], n;
+    int cont;
+    for(cont = 0; cont < 100; cont++){
+        scanf("%f", &n);
+        if(n <= 10){
+            vetor[cont] = n;
+            printf("A[%d] = %.1f\n", cont, vetor[cont]);
+        }
+    }
+    
+return 0;
+}
