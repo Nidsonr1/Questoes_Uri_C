@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int m, n, cont, sum = 0;
+    scanf("%d%d", &m, &n);
+    while(m > 0 && n > 0){
+        if(m > n){
+            for(cont = n; cont <= m; cont++){
+                sum+=cont;
+                printf("%d ", cont);
+            }
+        }else if(m < n){
+                for(cont = m; cont <= n; cont++){
+                    sum+=cont;
+                    printf("%d ", cont);
+                }
+        }printf("Sum=%d\n", sum);
+        scanf("%d%d", &m, &n);
+        sum = 0;
+    }
+return 0;
+system("pause");
+
+}
